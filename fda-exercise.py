@@ -1,7 +1,7 @@
 import requests
 
 BASE_URL = "https://api.fda.gov/drug/event.json?"
-
+print(BASE_URL)
 # request_url = "https://api.fda.gov/drug/event.json?count=patient.drug.drugindication.exact&limit=50"
 
 # response = requests.get(request_url)
@@ -54,3 +54,5 @@ while len(final_output) <= total_results:
     results = data.get("results")
     print(f"Received {len(results)} results")
     final_output = final_output + results
+
+print("All done!")
